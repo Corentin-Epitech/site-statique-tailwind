@@ -2,38 +2,32 @@
 <html lang="fr">
     <head>
         <title>Site Statique</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <link href="./src/output.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header >
-            <nav class="bg-gradient-to-r from-zinc-600 to-slate-600">
-                <div>
-                    <img src="assets/img/logo.png" alt="Logo du site">
-                </div>
-                <div>
-                    <p>Les formations</p>
-                </div>
+        <header class="bg-gradient-to-r from-gray-800 to-slate-700">
+            <nav class="flex ">
                 <div >
-                    <p >Rechercher</p>
+                    <img class="max-w-1/2 max-h-1/2" src="assets/img/logo.png" alt="Logo du site">
+                </div>
+                <div>
+                    <p class="hidden">Les formations</p>
+                </div>
+                <div class="hidden" >
+                    <p>Rechercher</p>
                     <img  src="assets/img/icone.svg" alt="Icone de loupe">
                 </div>
-                <div >
+                <div class="hidden">
                     <button >Connexion</button>
                     <button >inscription</button>
                 </div>
-                <div >
+                <div class="sm:hidden">
                     <input  type="checkbox">
                     <label  for="menu__toggle">
                     <span></span>
                     </label>
-
                     <ul >
                     <li><a  href="#"></a></li>
                             <li><a  href="#"></a></li>
@@ -44,42 +38,39 @@
                 </div>
             </nav>
         </header>
-        <div >
-            <div >
-                <h1>Klivio, L'allié de votre progression</h1>
-                <h3>Les meilleures formations sur le développement personnel </h3>
-                <button>En savoir plus</button>
+         <div class="bg-[url(/assets/img/hero-mobile.png)]">
+            <div>
+                <h1 class="justify-items-center">Klivio, L'allié de votre progression</h1>
+                <h3 >Les meilleures formations sur le développement personnel </h3>
+                <button class="bg-gradient-to-r from-neutral-200 to-stone-400 w-[130px] h-[25px]" >En savoir plus</button>
             </div>
         </div>
-        <div >
-            <div >
+        
+        <div>
+            <div>
                 <h2>Les formations populaires</h2>
             </div>
-            <div >
-                <div >
-                    <div >
-                        <div >
-                            <div ><h2 >15,99€</h2><h3 >60€</h3></div>
-                            <img src="assets/img/img-course.png" alt="Image de la formation">
-                        </div>
+            <div class="flex flex-col items-center">
+                <div class="border-8 rounded-lg flex flex-col w-80 bg-linear-to-br from-slate-700 to-red-900">
+                    <div class="flex flex-col ">
+                        <h4 class="flex justify-end uppercase font-bold">Parler en public</h4>
+                        <img class="w-25 h-10 flex" src="assets/img/note.svg">
+                        <img class="border-3 rounded-md ml-8 w-[80%] h-[40%]" src="assets/img/img-course.png" alt="Image de la formation">
                     </div>
                     <div >
-                        <h4>Parler en public</h4>
-                        <h5>Sonia Lefèvre | Coach prise de parole</h5>
-                        <div >
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
+                        <div class="flex flex-col" >
+                        <h5 class="mt-2">Sonia Lefèvre | Coach prise de parole</h5>
+                        <p class="mt-2">Gagnez en aisance et captez votre auditoire</p>
                         </div>
-                        <p>Gagnez en aisance et captez votre auditoire</p>
+                        
+                        <div class="flex justify-end mt-4"><h2 >15,99€</h2><h3 >60€</h3></div>
                     </div>
+                    
                 </div>
                 <div >
                     <div >
                         <div >
-                            <div ><h2 >15,99€</h2><h3 >60€</h3></div>
+                            <div ><h2>15,99€</h2><h3>60€</h3></div>
                             <img src="assets/img/img-course.png" alt="Image de la formation">
                         </div>
                     </div>
