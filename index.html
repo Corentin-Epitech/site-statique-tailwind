@@ -10,7 +10,7 @@
         <header class="bg-gradient-to-r from-gray-800 to-slate-700">
             <nav class="flex ">
                 <div >
-                    <img class="max-w-1/2 max-h-1/2" src="assets/img/logo.png" alt="Logo du site">
+                    <img class="max-w-1/2 max-h-1/2 ml-[10%] mt-[8%]" src="assets/img/logo.png" alt="Logo du site">
                 </div>
                 <div>
                     <p class="hidden">Les formations</p>
@@ -23,35 +23,31 @@
                     <button >Connexion</button>
                     <button >inscription</button>
                 </div>
-                <div class="sm:hidden">
-                    <input  type="checkbox">
-                    <label  for="menu__toggle">
-                    <span></span>
-                    </label>
-                    <ul >
-                    <li><a  href="#"></a></li>
-                            <li><a  href="#"></a></li>
-                            <li><a  href="#"></a></li>
-                            <li><a  href="#"></a></li>
-                            <li><a  href="#"></a></li>
-                    </ul>
-                </div>
+                <div class="lg:hidden">
+                    <button class="navbar-burger flex items-center text-white p-10">
+                    <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                    </button>
+		        </div>
             </nav>
         </header>
-         <div class="bg-[url(/assets/img/hero-mobile.png)]">
+         <div class="bg-[url(/assets/img/hero-mobile.png)]
+         bg-gray-800 bg-blend-soft-light bg-cover bg-bottom">
             <div class="flex flex-col items-center">
-                <h1 class="font-exo uppercase font-black text-2xl " >Klivio, L'allié de votre progression</h1>
-                <h3 class="text-center font-semibold">Les meilleures formations sur le développement personnel </h3>
-                <button class="bg-gradient-to-r from-neutral-200 to-stone-400 w-[130px] h-[25px] rounded-4xl font-exo" >En savoir plus</button>
+                <h1 class="font-exo uppercase font-black text-2xl text-center mt-8 mb-4 text-white" >Klivio, L'allié de votre progression</h1>
+                <h3 class="text-center text-white font-semibold mb-4">Les meilleures formations sur le développement personnel </h3>
+                <button class="bg-gradient-to-r from-neutral-200 to-stone-400 p-2 rounded-xl font-exo mb-8" >En savoir plus</button>
             </div>
         </div>
         
         <div>
-            
-            <div class="flex flex-col items-center">
                 <div class="mb-3 mt-5 ">
                     <h2 class="uppercase font-black font-exo text-center text-white text-2xl">Les formations populaires</h2>
                 </div>
+            <div class="flex flex-col items-center md:flex-row md:justify-center md:gap-12">
+                
                 <div class=" mb-8 border-8 rounded-lg flex flex-col w-80 bg-linear-to-br from-slate-700 to-red-900">
                     <div class="flex flex-col items-center ">
                         <h4 class="uppercase font-bold font-exo text-white text-xl">Parler en public</h4>
@@ -113,17 +109,18 @@
                     </div>
                 </div>
 
-                <div class="mb-8" >
-                    <button class="bg-gray-300 p-2 rounded-2xl font-exo text-base">Voir plus de formations</button>
-                </div>
+               
             </div>
-            
+             <div class="mb-8 flex justify-center" >
+                    <button class="bg-gray-300 p-2 rounded-2xl font-exo text-base">Voir plus de formations</button>
+            </div>
         </div>
         <div >
-            <div class="flex flex-col items-center" >
-                <div class="mb-8 mt-8">
+            <div class="mb-8 mt-8">
                 <h2 class="uppercase font-black font-exo text-center text-white text-2xl">Les formations récentes</h2>
-                </div>
+            </div>
+            <div class="flex flex-col items-center md:flex-row md:justify-center md:gap-12" >
+                
                 <div class=" mb-8 border-8 rounded-lg flex flex-col w-80 bg-linear-to-br from-slate-700 to-red-900">
                     <div class="flex flex-col items-center ">
                         <h4 class="uppercase font-bold font-exo text-white text-xl">Parler en public</h4>
@@ -184,9 +181,10 @@
                         <div class="flex justify-end mt-4"><h2 class="font-exo text-lg text-white font-bold mb-2 pr-2">15,99€</h2><h3 class="font-exo text-white text-sm line-through" >60€</h3></div>
                     </div>
                 </div>
-                <div class="mb-8">
+                
+            </div>
+            <div class="mb-8 flex justify-center">
                     <button class="bg-gray-300 p-2 rounded-2xl font-exo text-base">Voir plus de formations</button>
-                </div>
             </div>
         </div>
         <div class="flex flex-col items-center mb-8" >
@@ -194,8 +192,9 @@
                 <h2 class="mt-8 mb-8 uppercase font-black font-exo text-center text-white text-2xl">Avis clients</h2>
             </div>
             <div >
-                <div class="flex flex-col items-center" >
-                    <div >
+                <div class="flex flex-col items-center md:flex-row md:mb-8" >
+                    <div class="flex flex-col items-center md:ml-[10%] md:mr-8">
+                    <div>
                         <img  class="rounded-3xl" src="assets/img/juliette.png" alt="Photo de juliette">
                     </div>
                     
@@ -203,25 +202,28 @@
                     <div >
                         <img class="w-25 h-10 flex" src="assets/img/note.svg">
                     </div>
-                    <p class="w-[80%] text-white font-exo text-base mb-7">J’ai trouvé le parcours très bien structuré : vidéos courtes, quizzes pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions. L’interface est claire et la progression est motivante — parfait pour se former en autonomie.</p>
+                    </div>
+                    <p class="w-[80%] text-white font-exo text-base mb-7 md:mr-[10%]">J’ai trouvé le parcours très bien structuré : vidéos courtes, quizzes pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions. L’interface est claire et la progression est motivante — parfait pour se former en autonomie.</p>
                 </div>
-                <div class="flex flex-col items-center" >
+                <div class="flex flex-col items-center md:flex-row" >
+                    <div class="flex flex-col items-center md:ml-[10%] md:mr-8">
                     <img class="rounded-3xl" src="assets/img/camille.png" alt="Photo de Camille">
                     <h4 class="mt-2 font-exo font-black uppercase text-white text-2xl">Camille</h4>
                     <div >
                         <img class="w-25 h-10 flex" src="assets/img/note.svg">
                     </div>
-                    <p class="w-[80%] text-white font-exo text-base">Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le support et les corrections automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.</p>
+                    </div>
+                    <p class="w-[80%] text-white font-exo text-base md:mr-[10%]">Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le support et les corrections automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.</p>
                 </div>
             </div>
         </div>  
-        <div class="flex flex-col items-center ">
-            <div>
-                <h2 class="mt-8 uppercase font-black font-exo text-center text-white text-2xl">Les avantages klivio</h2>
-            </div>
+        <div>
+            <h2 class="mt-8 mb-4 uppercase font-black font-exo text-center text-white text-2xl">Les avantages klivio</h2>
+        </div>
+        <div class="flex flex-col items-center md:flex-row md:ml-[20%] md:gap-10"> 
             <div >
                 <div>
-                    <ul class="flex flex-col mb-8 text-white ml-[10%]">
+                    <ul class="flex flex-col mb-8 text-white ml-[10%] mr-[10%]">
                         <li class="flex mt-2 mb-3"><img src="assets/img/arrow-up-right.svg"  alt="Icone flèche vers le haut">Suivi de sa progression</li>
                         <li class="flex mb-3"><img src="assets/img/edit-01.svg"  alt="Icone crayon">Exercices et QCM pour la mise en pratique</li>
                         <li class="flex mb-3" ><img src="assets/img/download-02.svg"  alt="Icone téléchargement">Possibilité de télécharger/imprimer les formations</li>
@@ -232,18 +234,19 @@
                 </div>
             </div>
             <div class="flex items-center">
-                <img class="w-xs mb-8" src="assets/img/avantages.png" alt="Une personnes dans son bureau regardant son PC">
+                <img class="w-xs mb-8 md:w-xl" src="assets/img/avantages.png" alt="Une personnes dans son bureau regardant son PC">
             </div>
         </div>
-        <div class="flex flex-col items-center ">
-            <div >
-                    <h2 class="mt-8 mb-8 uppercase font-black font-exo text-center text-white text-2xl">Créez vos formations</h2>
-            </div>
+        <div >
+            <h2 class="mt-8 mb-8 uppercase font-black font-exo text-center text-white text-2xl">Créez vos formations</h2>
+        </div>
+        <div class="flex flex-col items-center md:flex-row md:ml-[20%] md:gap-10">
+            
             <div class="flex items-center" >
-                <img class="w-xs mb-8" src="assets/img/become-author.png" alt="Un bureau un peu fouilli d'une personnes en face time et qui écris dans un livre">
+                <img class="w-xs mb-8 md:w-xl" src="assets/img/become-author.png" alt="Un bureau un peu fouilli d'une personnes en face time et qui écris dans un livre">
             </div>
             <div >
-                <div >
+                <div>
                     <ul class="flex flex-col mb-8 text-white ml-[10%] mr-[10%]">
                         <li class="flex mb-3"><img src="assets/img/coin-hand.svg"  alt="Icone Main avec de l'argent qui tombe dedans">Commission unique, au pourcentage sur les ventes</li>
                         <li class="flex mb-3"><img src="assets/img/heart.svg"  alt="Icone coeur">Mise en avant sur la plateforme</li>
@@ -254,11 +257,11 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col items-center">
-            <div>
-                <h2 class=" uppercase font-black font-exo text-center text-white text-2xl">à propos de klivio</h2>
-            </div>
-            <div class="text-white w-[85%] mt-4 mb-12">
+        <div>
+            <h2 class=" uppercase font-black font-exo text-center text-white text-2xl">à propos de klivio</h2>
+        </div>
+        <div class="flex flex-col items-center md:flex-row md:ml-[10%] md:mr-[10%] md:gap-10">
+            <div class="text-white w-[85%] mt-4 mb-12 ">
                 <p>
                     Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre approche éducative. Nous nous engageons à assurer une rémunération équitable pour les créateurs de contenu, reconnaissant la qualité de leur travail.</p>
                     <p>
@@ -274,22 +277,23 @@
                 <h2 class="uppercase font-black font-exo text-center text-white text-2xl">Nous contacter</h2>
                 <hr class="text-white h-2">
             </div>
-            <div class="flex flex-col" >
-                <input class="bg-white w-xs rounded-lg mt-5 mb-3" type="text" placeholder="Nom">
-                <input class="bg-white w-xs rounded-lg mb-3" type="text" placeholder="Email">
+            <div class="flex flex-col md:flex-row mt-5 md:gap-8" >
+                <input class="bg-white w-x rounded-lg mb-3 md:w-sm md:h-9" type="text" placeholder="Nom">
+                <input class="bg-white w-xs rounded-lg mb-3 md:w-sm" type="text" placeholder="Email">
             </div>
             <div >
-                <textarea class="bg-white w-xs rounded-lg font-exo" name="text-box">Votre message</textarea>
+                <textarea class="bg-white w-xs rounded-lg font-exo md:w-3xl md:h-50" name="text-box">Votre message</textarea>
             </div>
             <div >
-                <button class="bg-gray-300 p-1 rounded-lg mt-2 mb-8 font-exo" type="submit">Envoyer</button>
+                <button class="bg-gray-300 p-1 rounded-lg mt-2 mb-8 font-exo md:w-xs md:h-10 " type="submit">Envoyer</button>
             </div>
         </div>
-        <footer class="flex flex-col items-center">
-            <div>
-                <hr class="text-white w-xs border-2 mb-8">
-            </div>
-            <img class="hidden" src="assets/img/logo.png"  alt="Logo">
+        <div class="flex justify-center">
+            <hr class="text-white w-xs border-2 mb-8">
+        </div>
+        <footer class="flex flex-col items-center md:flex-row md:justify-center md:gap-5">
+            
+            <img class="hidden md:flex" src="assets/img/logo.png"  alt="Logo">
             <div class="text-white font-exo mb-4">
                 <h3 class="uppercase font-bold">Mentions légales</h3>
                 <p class="text-center mt-4 mb-2">CGU</p>
@@ -306,11 +310,11 @@
                 </ul>
                 
             </div>
-            <div class="hidden">
+            <div class="hidden md:flex md:flex-col md:text-white md:font-exo ">
                 <button>Connexion</button>
                 <button>Inscription</button>
             </div>
-            <div class="hidden" >
+            <div class="hidden md:flex md:text-white md:font-exo" >
                 <hr>
                 <p >Klivio - 2025</p>
                 <p >Suivez - nous</p>
